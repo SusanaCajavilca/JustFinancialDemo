@@ -1,0 +1,200 @@
+/****************************/
+/*******Global Styling*******/
+/****************************/
+
+
+/*General settings*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+.IndexBody1, .IndexBody5,.IndexBody6, .IndexBody7
+{
+  margin:0px;   /*  0 margin, a default value */
+  background-color: #f4f4f4;  /*  a nice white to the eyes of the user*/
+
+
+}
+main{
+  text-align: center;
+}
+
+/*Global header*/
+
+.my-blue-navbar {
+  background-color: #1e3a8a !important; /* your custom blue */
+}
+
+.navbar-brand{
+  width: auto;
+  height: 110px;
+
+}
+.navbar-brand img{
+  width: auto;
+  height: 100%; /*adapting the image to the height of the header*/
+}
+
+header{
+  font-family: 'Raleway','sans-serif' ; /*for the menu options*/
+}
+
+.nav-link{
+  color: #f8f8f8;  /*for the menu options ('a' elements)*/
+}
+
+.navbar-nav .nav-link:hover {
+  /* Hover link effect */
+  background-color: #f8f8f8; /* a nice white */
+  color: #072d67;  /*  a nice blue */
+  transition: all 0.3s ease;  /* Smooth transition */
+}
+
+.navbar-nav .nav-link.active {
+  /* Active link effect (after clicking) */
+  background-color: #f8f8f8; /* a nice white */
+  color: #0e0e0e;  /*  a nice black */
+}
+
+/*Index Page*/
+
+.masthead_index{    /*Adjusting the image  that goes in the masthead*/
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #002a75,   /* dark blue */
+    #4da3ff    /* light blue */
+  );
+
+}
+
+.masthead_index div:nth-child(1){
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.65);  /*Making image opaque*/
+  display: flex;
+  align-items: center;       /*with this the h1 goes to the center*/
+  flex-direction: column;   /*with this, the buttons go below the h1*/
+  justify-content: center;  /*with this the h1 goes to the center*/
+}
+
+.menu-buttons{
+  padding-top: 2%;  /*giving space between the h1 and the buttons*/
+  flex-direction: row; /*buttons in row, next to each other */
+}
+
+.masthead_index a{
+  margin: 0px 10px;
+  border: solid 4px #0e0e0e; /*this is for the hover effect*/
+  background-color: #0e0e0e;
+  color: #f9f9f9;
+  padding: 10px 30px;
+  font-family: 'Raleway','sans-serif';
+  text-decoration: none;
+}
+
+.masthead_index a:hover{
+  border-color: #f9f9f9;   /*border becomes white when hover over the button*/
+}
+
+
+.title{
+  color: #f8f8f8;
+  /*font-family: 'Roboto',sans-serif;*/
+  letter-spacing: 0.5vh;
+  font-size: 2.5em;
+  font-weight: bold;
+  /*text-shadow: 10px 2px 8px rgba(0,0,0,0.7); /*adding effect of shadow to the name of the app*/
+}
+
+.info_index{
+  font-family: 'Raleway','sans-serif';
+  padding: 3%;
+}
+
+.IndexBody1 p{
+  font-size: 2em;
+  /*font-family: 'Roboto',sans-serif;*/
+  color: #f8f8f8;
+  padding:  1% 10%;
+}
+
+.IndexBody1 .mx-auto{
+  padding: 1%;
+}
+
+.IndexBody1 th, .IndexBody1 tr
+{
+  font-size: 1.1em;
+}
+
+/*Register Page*/
+.IndexBody6 h1{
+
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3em;
+
+  margin-top: 6%;
+  margin-bottom: 4%;
+  padding: 2%;
+
+}
+
+.IndexBody6 .btn{
+  margin-top: 5%;
+}
+
+.IndexBody6 fieldset {
+  margin: 2%; /* Adjust the value as needed */
+  font-family: 'Montserrat',sans-serif;
+}
+
+.IndexBody6 .col-2{
+  padding: 1%;
+}
+
+/*LogIn Page*/
+.IndexBody5 h1{
+
+  font-family: 'Montserrat',sans-serif;
+  font-size: 3em;
+
+  margin-top: 2%;
+  padding: 2%;
+
+}
+
+.IndexBody5 fieldset {
+  margin: 2%; /* Adjust the value as needed */
+  font-family: 'Montserrat',sans-serif;
+}
+
+.IndexBody5 .col-2{
+  padding: 1%;
+}
+
+.IndexBody5 .btn{
+  margin-top: 2%;
+}
+
+.IndexBody5 .alert{
+  font-family: 'Montserrat',sans-serif;
+}
+
+
+
+/*Dashboard*/
+
+
+
+
+.IndexBody7 .masthead_home {
+  margin-top: -22px; /* equal to navbar height */
+  height: calc(100vh - 70px); /* full screen minus navbar */
+  background-image: url('/images/dashboard.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

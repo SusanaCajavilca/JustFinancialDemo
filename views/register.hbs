@@ -1,0 +1,64 @@
+<body class="IndexBody6">
+<main>
+<section>
+    <h1>Create Your Account</h1>
+</section>
+<section class="form-col">
+    <form method="post">
+        <div class="col-sm-9 col-md-9 col-lg-6 mx-auto">
+        <fieldset class="form-group row">
+            <label for="username" class="col-2 control-label">
+                Username:
+            </label>
+            <div class="col-10">
+            <input class="form-control"
+                    name="username"
+                    id="username"
+                    required
+                    type="email"
+                    placeholder="email@email.com"
+            />
+            </div>
+        </fieldset>
+        <fieldset class="form-group row">
+            <label for="password" class="col-2 control-label">
+                Password:
+            </label>
+            <div class="col-10">
+            <input class="form-control"
+                    name="password"
+                    id="password"
+                    type="password"
+                    required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+            </div>
+        </fieldset>
+        <fieldset class="form-group row">
+            <label for="confirm" class="col-2 control-label">
+                Confirm:
+            </label>
+            <div class="col-10">
+            <input class="form-control"
+                    name="confirm"
+                    id="confirm"
+                    type="password"
+                    required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            />
+            </div>
+        </fieldset>
+        <fieldset class="form-group">
+            <button class="btn btn-dark d-block mx-auto" >Register</button>
+            <hr/>
+            Already have an account?
+            <a href="/login" title="Login">
+                Login
+            </a>
+            <hr/>
+        </fieldset>
+        </div>
+    </form>
+</section>
+</main>
+</body>

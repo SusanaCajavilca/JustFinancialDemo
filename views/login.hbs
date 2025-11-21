@@ -1,0 +1,59 @@
+<body class="IndexBody5">
+<main>
+    <section>
+        <h1>Welcome Back</h1>
+    </section>
+    <section>
+        {{#if messages}}
+        <div class="alert alert-danger">
+            Invalid credentials
+        </div>
+        {{else}}
+        <div class="alert alert-info">
+            Please enter your credentials
+        </div>
+        {{/if}}
+    </section>
+    <section class="form-col">
+        <form method="post">
+            <div class="col-sm-9 col-md-9 col-lg-6 mx-auto">
+                <fieldset class="form-group row">
+                    <label for="username" class="col-2 control-label">
+                        Username:
+                    </label>
+                    <div class="col-10">
+                        <input class="form-control"
+                               name="username"
+                               id="username"
+                               required
+                        />
+                    </div>
+                </fieldset>
+                <fieldset class="form-group row">
+                    <label for="password" class="col-2 control-label">
+                        Password:
+                    </label>
+                    <div class="col-10">
+                        <input class="form-control"
+                               name="password"
+                               id="password"
+                               type="password"
+                               required
+                        />
+                    </div>
+                </fieldset>
+                <fieldset class="form-group">
+                    <button class="btn btn-dark d-block mx-auto" >Log In</button>
+                    <hr/>
+                    Need an account?
+                    <a href="/register" title="Register">
+                        Register
+                    </a>
+                    <hr/>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+
+</main>
+</body>
